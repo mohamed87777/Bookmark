@@ -1,0 +1,66 @@
+.font {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+}
+h2 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 200;
+  font-size: 18px !important;
+  background-image: linear-gradient(to right, #1e7638, #f3e119);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-page {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 600;
+}
+button {
+  width: 150px;
+}
+#centeredAlert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 80%;
+  max-width: 400px;
+  display: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+.bookmark {
+  border: black dotted;
+  border-left: 3px;
+  border-right: 3px;
+}
+.bg {
+  background-color: #f7ecde !important;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 26%;
+  width: 100%;
+  height: 18%;
+  background-color: #fec260;
+  z-index: -1;
+  transition: height 0.9s ease;
+}
+
+h1:hover::after {
+  height: 40%;
+}
